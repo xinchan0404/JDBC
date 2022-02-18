@@ -1,4 +1,4 @@
-package com.xinchan.jdbc;
+package com.xinchan.jdbc.firstJdbc;
 
 import com.mysql.jdbc.Driver;
 
