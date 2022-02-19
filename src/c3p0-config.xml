@@ -1,0 +1,16 @@
+<c3p0-config>
+    <!-- This app is massive! -->
+    <named-config name="xinchan">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/jdbc_demo</property>
+        <property name="user">root</property>
+        <property name="password">root</property>
+        <property name="acquireIncrement">50</property>
+        <property name="initialPoolSize">100</property>
+        <property name="minPoolSize">50</property>
+        <property name="maxPoolSize">1000</property>
+
+        <property name="maxStatements">5</property>
+        <property name="maxStatementsPerConnection">2</property>
+    </named-config>
+</c3p0-config>
