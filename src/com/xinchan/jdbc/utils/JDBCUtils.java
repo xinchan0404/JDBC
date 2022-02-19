@@ -1,4 +1,4 @@
-package utils;
+package com.xinchan.jdbc.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,6 +6,7 @@ import java.sql.*;
 import java.util.Properties;
 
 /**
+ * 由于数据库连接和释放资源是通用操作，因此选择将这些操作封装成工具类
  * @author xinchan
  * @version 1.0.1 2022-02-19
  */
