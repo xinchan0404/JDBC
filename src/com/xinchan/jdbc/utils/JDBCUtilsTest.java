@@ -100,10 +100,10 @@ public class JDBCUtilsTest {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         String select = "select name, password from admin";
-        int i = 0;
         try {
             // 1. 注册驱动并获取连接
             connection = JDBCUtils.getConnection();
+            System.out.println(connection.getClass());
             // 2. 获取 preparedStatement
             preparedStatement = connection.prepareStatement(select);
             // 3. 执行 SQL 语句

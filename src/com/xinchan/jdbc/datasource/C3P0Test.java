@@ -52,11 +52,13 @@ public class C3P0Test {
         ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource("xinchan");
 
         long start = System.currentTimeMillis();
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 500000; i++) {
+            // 2. 获取连接
             Connection connection = comboPooledDataSource.getConnection();
+            // 3. 关闭连接
             connection.close();
         }
         long end = System.currentTimeMillis();
-        System.out.println("C3P0 耗时：" + (end - start));  // c3p0: 437 ms
+        System.out.println("C3P0 耗时~~：" + (end - start));  // c3p0:  1582 ms
     }
 }
